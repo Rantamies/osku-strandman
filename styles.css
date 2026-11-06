@@ -233,16 +233,17 @@ h1 span {
 .hero-photo {
   margin: 0;
   position: relative;
-  background: #050605;
+  background: #fff;
 }
 
 .hero-photo img {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 78vh;
-  object-fit: cover;
-  object-position: center 18%;
+  max-height: none;
+  object-fit: contain;
+  object-position: center center;
+  background: #fff;
 }
 
 .rating {
@@ -689,15 +690,15 @@ h2 {
   }
 
   .hero-photo {
-    background: transparent;
+    background: #fff;
   }
 
   .hero-photo img {
     width: 100%;
-    height: min(78vh, 760px);
-    max-height: none;
-    object-fit: cover;
-    object-position: center 16%;
+    height: auto;
+    max-height: min(78vh, 760px);
+    object-fit: contain;
+    object-position: center center;
   }
 
   .rating {
